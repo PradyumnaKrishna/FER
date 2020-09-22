@@ -1,0 +1,1 @@
+This model have accuracy around 70% on training and 70% on testing
