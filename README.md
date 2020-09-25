@@ -38,6 +38,7 @@
 
         ./main.py
     using your terminal
+ - To quit, press `q`
 
  - To Train Model
 
