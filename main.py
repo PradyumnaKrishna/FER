@@ -1,14 +1,17 @@
 #! /usr/bin/env python3
 
+# Import Libraries
 import cv2, os
 import numpy as np
 from model import FacialExpressionModel
 
+# Load other required files
 facec = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 model = FacialExpressionModel("model.json", "model_weights.h5")
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 class VideoCamera(object):
+    # Capture Camera or use video
     def __init__(self):
         #Default for Webcam
         self.video = cv2.VideoCapture(0)
@@ -16,6 +19,7 @@ class VideoCamera(object):
         # For Example Videos
         #self.video = cv2.VideoCapture(os.getcwd() + '/videos/facial_exp.mkv')
 
+    # Release Video
     def __del__(self):
         self.video.release()
 
@@ -34,11 +38,9 @@ class VideoCamera(object):
             cv2.putText(fr, pred, (x, y), font, 1, (255, 255, 0), 2)
             cv2.rectangle(fr,(x,y),(x+w,y+h),(255,0,0),2)
 
-        #_, jpeg = cv2.imencode('.jpg', fr)
-        #return jpeg.tobytes()
         return cv2.imshow("Expression Detection", fr)
 
-
+# Function to run camera and exit function
 def main(camera):
     while True:
         camera.get_frame()
@@ -47,5 +49,6 @@ def main(camera):
         if key == ord('q'):
             break
 
+# Starting Function
 if __name__ == "__main__":
     main(VideoCamera())
