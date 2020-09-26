@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/PradyumnaKrishna/PradyumnaKrishna/master/logo.svg" alt="Logo" title="Logo" align="right" height="50" width="50"/>
 
-# Facial AI [![Version][Version-Badge]][Version] [![Archived][Archive-Badge]](#) [![License: MIT][License-Badge]](LICENSE.md)
+# FER : Facial Expression Recognition [![Version][Version-Badge]][Version] [![License: MIT][License-Badge]](LICENSE.md)
 
 ## Info
 ![](Docs/Happy.png)
@@ -38,6 +38,7 @@
 
         ./main.py
     using your terminal
+
  - To quit, press `q`
 
  - To Train Model
@@ -45,9 +46,8 @@
     Open `Model Training` Directory and open the relevant training notebook using Google Colab or your local computer to train model
 
 ## Issues & Suggestions
- If any issues and suggestions to me, you can create an [issue](https://github.com/PradyumnaKrishna/Facial-AI/issues).
+ If any issues and suggestions to me, you can create an [issue](https://github.com/PradyumnaKrishna/FER/issues).
 
- [Archive-Badge]:        https://img.shields.io/badge/Archived-darkgreen.svg
  [License-Badge]:        https://img.shields.io/badge/License-MIT-red.svg
- [Version]:              https://github.com/PradyumnaKrishna/Facial-AI/releases/
- [Version-Badge]:        https://img.shields.io/github/v/tag/PradyumnaKrishna/Facial-AI?label=Version
+ [Version]:              https://github.com/PradyumnaKrishna/FER/releases/
+ [Version-Badge]:        https://img.shields.io/github/v/tag/PradyumnaKrishna/Fer?label=Version
